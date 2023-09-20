@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        #name,
+        #comments,
+        #country {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #male,
+        #female,
+        #other,
+        #sports,
+        #music,
+        #movies {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #submit,
+        #reset {
+            padding: 8px 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #submit:hover,
+        #reset:hover {
+            background-color: #555;
+        }
+
+        #gender,
+        #Interests {
+            display: inline;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Basic Survey</h1>
+        <form action="confirmation.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+            <label>Gender:</label>
+            <div id="gender">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <label>Interests:</label>
+            <div id="Interests">
+                <input type="checkbox" id="sports" name="interests[]" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests[]" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="movies" name="interests[]" value="movies">
+                <label for="movies">Movies</label>
+            </div>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Your comments here..."></textarea>
+
+            <label>
+                <input type="checkbox" id="terms" name="terms" required>
+                I accept the Terms & Conditions
+            </label>
+
+            <button type="submit" id="submit">Submit</button>
+            <button type="reset" id="reset">Reset</button>
+        </form>
+    </div>
+</body>
+
+</html>
