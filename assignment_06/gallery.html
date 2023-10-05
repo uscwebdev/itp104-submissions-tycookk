@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Gallery Page
+    </title>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Young+Serif">
+
+    <style>
+        h1 {
+            height: 50px;
+            line-height: 50px;
+            font-family: "Scriptina";
+
+            background-image: url("bonsai_pics/DL_021_LongHorizontalAgavePrickleyPearLandscape.webp");
+            background-size: cover;
+            background-position: center;
+        }
+
+        body {
+            font-family: 'Young Serif', serif;
+        }
+
+        .collage {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1250px;
+            flex-direction: row;
+            max-height: 1250px
+        }
+        .collage-item {
+            position: relative;
+            margin: 2px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .collage-item-small {
+            width: 189px;
+            height: 189px;
+            margin: 2px;
+            border: 1px solid black;
+        }
+
+        .collage-item-medium {
+            width: 384px;
+            height: 189px;
+            margin: 2px;
+            border: 1px solid black;
+        }
+
+        .collage-item-large {
+            min-width: 384px;
+            height: 384px;
+            margin: 2px;
+            border: 1px solid black;
+
+        }
+
+        .caption {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .collage-item:hover .caption {
+            opacity: 1;
+        }
+
+
+        #main {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            flex-wrap: wrap;
+            margin-top: 35px;
+            margin-bottom: 35px;
+            background-color: #B59860;
+            width: 780px;
+            box-shadow: 0px 0px 10px black;
+
+        }
+
+        #last-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #bottom-half {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        #box-1 {
+            background-image: url("bonsai_pics/bonsai_1.png");
+            background-size: cover;
+            background-position: center;
+            background-color: antiquewhite;
+        }
+
+        #box-2 {
+            background-image: url("bonsai_pics/bonsai_2.png");
+            background-size: cover;
+            background-position: center;
+            background-color: antiquewhite;
+        }
+
+        #box-3 {
+            background-image: url("bonsai_pics/bonsai_3.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box-4 {
+            background-image: url("bonsai_pics/bonsai_man.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box-5 {
+            background-image: url("bonsai_pics/bonsai_tree.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box-6 {
+            background-image: url("bonsai_pics/images.jpg");
+            background-size: cover;
+            background-position: 90% 18%;
+        }
+
+        #box-7 {
+            background-image: url("bonsai_pics/wire_bonsai.jpeg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box-8 {
+            background-image: url("bonsai_pics/how-to-grow-bonsai-tree-getty-0823-1b85885276d44e7586be6ee7a062465d.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box-9 {
+            background-image: url("bonsai_pics/GettyImages-598322873-409b66c4895d492eb28fde9e752d98ad.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        #box-10 {
+            background-image: url("bonsai_pics/a-potted-bonsai-tree-on-a-wooden-table-meltonmedia.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gallery</h1>
+    <div id="navbar">
+
+        <div class="home">
+            <a href="interests.html">Home</a>
+            <div id="home-submenu">
+                <a href="interests.html#main_1">The Artistry of Bonsai</a>
+                <a href="interests.html#main_2">Patience and Precision</a>
+                <a href="interests.html#main_3">Bonsai Styles</a>
+            </div>
+
+        </div>
+
+
+        <a id="highlight-nav" href="gallery.html">Gallery</a>
+    
+    
+    
+    </div>
+
+
+
+    <div id="main">
+        <div class="collage">
+            <div id="box-1" class="collage-item collage-item-small">
+                <div class="caption">Bonsai Tree</div>
+            </div>
+            <div id="box-2" class="collage-item collage-item-small">
+                <div class="caption">Bonsai Tree</div>
+            </div>
+
+            <div id="box-3" class="collage-item collage-item-medium">
+                <div class="caption">Trimming Bonsai</div>
+            </div>
+
+            <div id="box-4" class="collage-item collage-item-small">
+                <div class="caption">Man making Bonsai</div>
+            </div>
+            <div id="box-5" class="collage-item collage-item-small">
+                <div class="caption">Bonsai Tree</div>
+            </div>
+
+            <div id="box-6" class="collage-item collage-item-medium">
+                <div class="caption">Pink Bonsai Tree</div>
+            </div>
+
+            <div id="bottom-half">
+                <div id="box-7" class="collage-item collage-item-large">
+                    <div class="caption">Wrapping Bonsai</div>
+                </div>
+
+                <div id="last-box">
+                    <div id="box-8" class="collage-item collage-item-medium">
+                        <div class="caption">Trimming Bonsai</div>
+                    </div>
+                    <div id="box-9" class="collage-item collage-item-small">
+                        <div class="caption">Bonsai Tree</div>
+                    </div>
+                    <div id="box-10" class="collage-item collage-item-small">
+                        <div class="caption">Bonsai Tree</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        Ty Cook | Interests Page
+    </div>
+</body>
+
+
+</html>

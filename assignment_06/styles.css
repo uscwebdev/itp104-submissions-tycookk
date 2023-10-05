@@ -1,0 +1,106 @@
+@font-face {
+    src: url(fonts/scriptina/SCRIPTIN.ttf);
+    font-family: "Scriptina"
+}
+
+h1 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em black;
+    color: #B59860;
+
+    background-image: url("bonsai_pics/bonsai_background.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    margin: 0px;
+    padding: 50px;
+
+    font-family: "Scriptina";
+}
+
+body {
+    background-color: #46674D;
+    margin: 0px
+}
+
+h2 {
+    color: #000;
+    margin-top: 50px;
+}
+
+#header {
+    background-image: url('img/web_dev.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #B59860;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 1em white;
+    line-height: 100px;
+}
+
+#main {
+    width: 600px;
+
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+    border-bottom: #777 1px solid;
+    background-color: #B59860;
+    position: relative;
+}
+
+#home-submenu {
+    display: none;
+    position: absolute;
+    background-color: #B59860;
+    width: 200px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px black;
+}
+
+#home-submenu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.home:hover #home-submenu {
+    display: block;
+}
+
+#navbar a {
+    text-decoration: none;
+    /* background-color: yellow; */
+    width: 150px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #EBD494;
+    border-bottom: 2px solid #EBD494;
+}
+
+#navbar a:hover,
+#navbar #highlight-nav {
+    color: white;
+    text-shadow: 0em 0em 1em black;
+    border-bottom: 2px solid;
+}
+
+.footer {
+    text-align: center;
+    background-color: #B59860;
+    padding: 15px;
+    margin: auto;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 0px 0px 10px black;
+}
