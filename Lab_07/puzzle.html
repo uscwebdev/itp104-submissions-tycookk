@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Puzzle Exercise</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        #big-puzzle {
+            display: flex;
+            max-width: 300px;
+            flex-wrap: wrap;
+            box-shadow: black 0px 0px 10px;
+
+        }
+
+        #puzzle {
+            box-shadow: black 0px 0px 10px;
+            position: relative;
+            right: 20px;
+            bottom: 10px;
+        }
+
+        #middle {
+            position: relative;
+            bottom: 15px;
+            left: 20px;
+            box-shadow: black 0px 0px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Puzzle Exercise</h1>
+
+    <div id="big-puzzle">
+        <img id="puzzle" src="img/row-1-column-1.jpg" alt="Puzzle piece 1" class="puzzle-piece">
+        <img src="img/row-1-column-2.jpg" alt="Puzzle piece 2" class="puzzle-piece">
+        <img src="img/row-1-column-3.jpg" alt="Puzzle piece 3" class="puzzle-piece">
+        <img src="img/row-2-column-1.jpg" alt="Puzzle piece 4" class="puzzle-piece">
+        <img id="middle" src="img/row-2-column-2.jpg" alt="Puzzle piece 5" class="puzzle-piece">
+        <img src="img/row-2-column-3.jpg" alt="Puzzle piece 6" class="puzzle-piece">
+        <img src="img/row-3-column-1.jpg" alt="Puzzle piece 7" class="puzzle-piece">
+        <img src="img/row-3-column-2.jpg" alt="Puzzle piece 8" class="puzzle-piece">
+        <img src="img/row-3-column-3.jpg" alt="Puzzle piece 9" class="puzzle-piece">
+    </div>
+
+
+</body>
+
+</html>
