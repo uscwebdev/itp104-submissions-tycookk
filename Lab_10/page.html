@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Image Fan-Out Effect with Vertical Shift</title>
+    <style>
+        .image-container {
+            width: 500px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            margin: auto auto;
+            transition: transform 0.5s ease;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: auto;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%);
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover img:nth-child(1) {
+            transform: translate(-100%) rotate(-45deg);
+
+        }
+
+        .image-container:hover img:nth-child(2) {
+            transform: translate(-50%, -50%);
+        }
+
+        .image-container:hover img:nth-child(3) {
+            transform: translate(0%) rotate(45deg);
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hover Over Panda!</h1>
+    <div class="image-container">
+        <img src="images/panda1.jpg" alt="First Image">
+        <img src="images/panda2.jpeg" alt="Second Image">
+        <img src="images/panda3.jpg" alt="Third Image">
+    </div>
+
+</body>
+
+</html>
