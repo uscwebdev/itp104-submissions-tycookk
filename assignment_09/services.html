@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #gallery {
+            display: flex;
+            align-items: flex-start;
+            align-items: center;
+            /* Updated */
+            justify-content: center;
+            /* Updated */
+        }
+
+        .thumbnail {
+            width: 150px;
+            height: 150px;
+            margin: 5px;
+            opacity: 0.7;
+        }
+
+        .thumbnail:hover {
+            opacity: 1;
+        }
+
+        .thumbnail:hover+p {
+            visibility: visible;
+        }
+
+        .img-container {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        .img-container>p {
+            text-align: center;
+            visibility: hidden;
+        }
+
+        #secondh {
+            margin-top: 75px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Bail.Com</h1>
+        <nav>
+            <ul>
+                <li><a class="navbar"
+                        href="https://uscwebdev.github.io/itp104-submissions-tycookk/assignment_09/final.html">About
+                        Us</a></li>
+                <li id="highlight-nav"><a class="navbar" id="highlight-word"
+                        href="https://uscwebdev.github.io/itp104-submissions-tycookk/assignment_09/services.html">Services</a>
+                </li>
+                <li><a class="navbar"
+                        href="https://uscwebdev.github.io/itp104-submissions-tycookk/assignment_09/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h2>Our Services</h2>
+        <div id="gallery">
+            <div class="img-container">
+                <img class="thumbnail" src="images/istockphoto-1088968016-612x612.jpg" alt="Art">
+                <p>Art</p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="images/istockphoto-1277950504-612x612.jpg" alt="Bonsai">
+                <p>Bonsai</p>
+            </div>
+            <div class="img-container">
+                <img class="thumbnail" src="images/istockphoto-517929495-612x612.jpg" alt="Hiking">
+                <p>Hiking</p>
+            </div>
+        </div>
+
+        <h2>
+            <div id="secondh">Our Services</div>
+        </h2>
+        <p>kahdsfkajhs</p>
+
+
+    </div>
+
+    <footer>
+        <p>© 2023 Premiere Bail Bonds</p>
+    </footer>
+
+</body>
+
+
+</html>
