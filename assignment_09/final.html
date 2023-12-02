@@ -15,18 +15,39 @@
             flex-direction: row;
             justify-content: center;
         }
+
         .location-column {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             margin: 10px;
+            margin-bottom: 30px;
             padding: 10px;
             border-radius: 5px;
             background-color: lightgray;
             width: 300px;
         }
-</style>
+
+        .call-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-button:hover {
+            background-color: #45a049;
+        }
+
+        iframe{
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -34,7 +55,7 @@
         <h1>Bail.Com</h1>
         <nav>
             <ul>
-                <li  id="highlight-nav"><a class="navbar" id="highlight-word"
+                <li id="highlight-nav"><a class="navbar" id="highlight-word"
                         href="https://uscwebdev.github.io/itp104-submissions-tycookk/assignment_09/final.html">About
                         Us</a></li>
                 <li><a class="navbar"
@@ -50,16 +71,36 @@
     <div id="content">
         <section id="info">
             <h2>What is Bail?</h2>
-           <p>Bai is BLAH BLAH </p>
+            <p class="indent">Bail bonds are a financial service used in the U.S. justice system, allowing individuals
+                arrested for a
+                crime to be released from jail while awaiting trial. Here's a quick overview:
+
+            <ol class="listindent">
+                <li>Bail Setting: After arrest, a judge sets a bail amount. If the defendant can't afford it, they can
+                    seek help from a bail bondsman.</li>
+                <li>Bail Bondsman: A bail bondsman provides the bail money for a fee (usually about 10% of the bail),
+                    which is non-refundable. They may also require collateral like property.</li>
+                <li>Release and Conditions: The defendant is released but must appear at all court dates. Failure to
+                    appear may lead to the forfeiture of the bond.</li>
+                <li>Forfeiture and Bounty Hunters: If the defendant doesn't show up in court, the bondsman can hire a
+                    bounty hunter to bring them back, though this is not legal in all states.</li>
+                <li>Conclusion: Once the case concludes and if the defendant meets all conditions, the bail bond is
+                    dissolved and collateral returned, but the fee remains with the bondsman.</li>
+            </ol>
+
+            <div class="indent">Bail bonds provide a way for individuals to remain out of jail during their trial, but
+                they've been
+                criticized for contributing to economic disparities in the justice system. </div>
+            </p>
         </section>
 
 
         <section id="about">
             <h2>About Us</h2>
-            <p>At Bail.com, we are dedicated to providing exceptional bail bond services across California. Our mission
-                is twofold: firstly, to assist our clients in navigating the bail process with ease and discretion; and
-                secondly, to educate and inform the public about the intricacies of bail. We believe that knowledge
-                empowers and simplifies what can often be a complex and stressful experience.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qZSZWVbACcE?si=f-qt1nm2_JkKb_-8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </section>
 
         <section id="Locations">
@@ -67,16 +108,15 @@
             <div class="location-row">
                 <div class="location-column">
                     <h3>Santa Ana</h3>
-                    <p>Address: 132, My Street, 
+                    <p>Address: 132, My Street,
                         Kingston, New York 12401.</p>
-                    <p><a href="tel:8006620056">Call Us Today!</a></p>
+                    <p><a href="tel:8006620056" class="call-button">Call Us Today!</a></p>
                 </div>
                 <div class="location-column">
                     <h3>San Jose</h3>
                     <p>Address: 132, My Street, Kingston, New York 12401.</p>
-                    <p><a href="tel:4084827822">Call Us Today!</a></p>
+                    <p><a href="tel:4084827822" class="call-button">Call Us Today!</a></p>
                 </div>
-            </div>
         </section>
 
     </div>

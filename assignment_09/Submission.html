@@ -32,11 +32,20 @@
         .button-like {
             display: inline-block;
             padding: 10px 20px;
-            border: 2px solid #000;
+            border: none;
             border-radius: 5px;
             text-decoration: none;
-            color: #000;
+            color: #fff;
+            background-color: #4CAF50;
             font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-like:hover {
+            background-color: #45a049;
+        }
+        #content {
+            text-align: center;
         }
     </style>
 </head>
@@ -62,9 +71,15 @@
     <div id="content">
         <section id="submission-received">
             <h2>Submission Received</h2>
-            <p>Thank you for your submission!</p>
-            <p>We have received your information and will get back to you shortly.</p>
-            <a class="button-like" href="https://uscwebdev.github.io/itp104-submissions-tycookk/assignment_09/final.html">Go back to the original page</a>
+            <div class="center">
+                <p>Thank you for your submission!</p>
+                <p>We have received your information and will get back to you shortly.</p>
+                <div>
+                    <a class="button-like"
+                        href="https://uscwebdev.github.io/itp104-submissions-tycookk/assignment_09/final.html">Go back
+                        to the original page</a>
+                </div>
+            </div>
         </section>
     </div>
 
